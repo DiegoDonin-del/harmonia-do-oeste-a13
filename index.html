@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmonia do Oeste - Escola de Música em Chapecó</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Ícones do Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Nosso CSS customizado -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-harmonia sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo.jpg" alt="Logo Harmonia do Oeste">
+        Harmonia do Oeste
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="empresa.html">Empresa</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#depoimentos">Depoimentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carroselServicos" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carroselServicos" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carroselServicos" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carroselServicos" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/servico-violao.jpg" alt="Aulas de violão e guitarra">
+        <div class="carousel-caption">
+          <h2>Sua paixão pela música ao alcance das suas mãos</h2>
+          <p>Aulas individuais de Violão e Guitarra para todos os níveis</p>
+          <a href="servico-violao.html" class="btn btn-ambar">Saiba mais</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/servico-piano.jpg" alt="Aulas de piano e teclado">
+        <div class="carousel-caption">
+          <h2>Descubra o piano e o teclado</h2>
+          <p>Turmas para crianças, jovens e adultos, do zero ao avançado</p>
+          <a href="servico-piano.html" class="btn btn-ambar">Saiba mais</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/servico-bateria.jpg" alt="Aulas de bateria e percussão">
+        <div class="carousel-caption">
+          <h2>Encontre o seu ritmo</h2>
+          <p>Bateria e percussão com professores especializados</p>
+          <a href="servico-bateria.html" class="btn btn-ambar">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carroselServicos" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carroselServicos" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <section id="servicos" class="container py-5">
+    <div class="text-center mb-5">
+      <h2 class="fw-titulo">Nossos Cursos</h2>
+      <hr class="linha-dourada">
+      <p>Aulas presenciais e individuais, com material didático próprio e recitais semestrais.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card card-servico h-100 shadow-sm">
+          <img src="img/servico-violao.jpg" class="card-img-top" alt="Aulas de Violão e Guitarra">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Violão e Guitarra</h5>
+            <p class="card-text">Técnicas de dedilhado, palhetada, leitura de cifras/partituras e repertório em MPB, Rock, Pop e Sertanejo.</p>
+            <p class="preco-servico mb-3">A partir de R$ 180,00/mês <!-- valor de exemplo, ajuste conforme sua tabela real --></p>
+            <a href="servico-violao.html" class="btn btn-outline-ambar mt-auto">Ver detalhes e orçamento</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card card-servico h-100 shadow-sm">
+          <img src="img/servico-piano.jpg" class="card-img-top" alt="Aulas de Piano e Teclado">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Piano e Teclado</h5>
+            <p class="card-text">Postura, leitura de claves, percepção auditiva e repertório erudito ou popular, para todas as idades.</p>
+            <p class="preco-servico mb-3">A partir de R$ 180,00/mês <!-- valor de exemplo, ajuste conforme sua tabela real --></p>
+            <a href="servico-piano.html" class="btn btn-outline-ambar mt-auto">Ver detalhes e orçamento</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card card-servico h-100 shadow-sm">
+          <img src="img/servico-bateria.jpg" class="card-img-top" alt="Aulas de Bateria e Percussão">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Bateria e Percussão</h5>
+            <p class="card-text">Coordenação motora, independência de membros, ritmos variados e prática em conjunto.</p>
+            <p class="preco-servico mb-3">A partir de R$ 200,00/mês <!-- valor de exemplo, ajuste conforme sua tabela real --></p>
+            <a href="servico-bateria.html" class="btn btn-outline-ambar mt-auto">Ver detalhes e orçamento</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="secao-escura py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h2>Escola de Música Harmonia do Oeste</h2>
+          <p>
+            Nascemos em 2018 no coração de Chapecó-SC, do sonho de três músicos apaixonados pela docência.
+            Hoje somos referência no ensino de instrumentos musicais no Oeste Catarinense, com metodologia
+            prática, fundamentação teórica sólida e salas com tratamento acústico.
+          </p>
+          <a href="empresa.html" class="btn btn-ambar">Conheça nossa história e equipe</a>
+        </div>
+        <div class="col-lg-5">
+          <img src="img/prof-mariana.jpg" alt="Professora dando aula de música" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="container py-5">
+    <div class="text-center mb-5">
+      <h2 class="fw-titulo">O que nossos alunos dizem</h2>
+      <hr class="linha-dourada">
+    </div>
+
+    <!-- os depoimentos são carregados do banco pelo js/depoimentos.js -->
+    <div class="row g-4" id="listaDepoimentos">
+      <p class="text-center text-muted">Carregando depoimentos...</p>
+    </div>
+
+    <!-- formulário para enviar depoimento -->
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-8">
+        <div class="card shadow-sm p-4">
+          <h4 class="mb-3">Deixe o seu depoimento</h4>
+          <form id="formDepoimento">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Nome</label>
+                <input type="text" name="nome" class="form-control" maxlength="100" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Curso</label>
+                <select name="curso" class="form-select">
+                  <option value="">Selecione...</option>
+                  <option>Violão e Guitarra</option>
+                  <option>Piano e Teclado</option>
+                  <option>Bateria e Percussão</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Depoimento</label>
+              <textarea name="texto" class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-ambar"><i class="bi bi-chat-quote"></i> Enviar depoimento</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <div class="text-center mb-5">
+      <h2 class="fw-titulo">Perguntas Frequentes</h2>
+      <hr class="linha-dourada">
+    </div>
+
+    <div class="accordion" id="faqAccordion">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+            Preciso ter algum conhecimento musical para começar?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Não! Nossas turmas atendem desde iniciantes completos até alunos avançados que buscam aperfeiçoamento.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            As aulas são individuais ou em grupo?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            As aulas são presenciais e individuais, respeitando o ritmo de aprendizado de cada aluno.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+            A escola oferece instrumentos para treino no local?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Sim, contamos com instrumentos de alta qualidade disponíveis para treino, além de salas com tratamento acústico.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="py-4">
+    <div class="container text-center">
+      <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> Rua Getúlio Vargas, 1420 - E, Centro, Chapecó - SC, CEP 89801-000</p>
+      <p class="mb-1"><i class="bi bi-telephone-fill"></i> (49) 3319-2600 &nbsp;|&nbsp; <i class="bi bi-whatsapp"></i> (49) 99801-7026</p>
+      <div class="my-2">
+        <a href="#" class="mx-2" title="Instagram"><i class="bi bi-instagram fs-5"></i></a>
+        <a href="#" class="mx-2" title="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+        <a href="https://wa.me/5549998017026" class="mx-2" title="WhatsApp"><i class="bi bi-whatsapp fs-5"></i></a>
+      </div>
+      <p class="small mb-0">&copy; 2026 Escola de Música Harmonia do Oeste. Todos os direitos reservados.</p>
+      <p class="small mb-0">Desenvolvido por Diego Vinicius Donin Quadrado</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5549998017026" class="whatsapp-flutuante" target="_blank" title="Fale conosco pelo WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/depoimentos.js"></script>
+</body>
+</html>
