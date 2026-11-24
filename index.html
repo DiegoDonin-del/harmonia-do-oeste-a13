@@ -152,12 +152,13 @@
       <hr class="linha-dourada">
     </div>
 
-    <!-- os depoimentos são carregados do banco pelo js/depoimentos.js -->
+    <!-- Os cards são montados pelo JavaScript (js/depoimentos.js)
+         com os dados da tabela "depoimentos" do banco -->
     <div class="row g-4" id="listaDepoimentos">
       <p class="text-center text-muted">Carregando depoimentos...</p>
     </div>
 
-    <!-- formulário para enviar depoimento -->
+    <!-- Formulário para o aluno enviar um novo depoimento -->
     <div class="row justify-content-center mt-5">
       <div class="col-lg-8">
         <div class="card shadow-sm p-4">
@@ -184,6 +185,7 @@
             </div>
             <button type="submit" class="btn btn-ambar"><i class="bi bi-chat-quote"></i> Enviar depoimento</button>
           </form>
+          <div id="alertaDepoimento" class="d-none"></div>
         </div>
       </div>
     </div>
@@ -258,6 +260,7 @@
   </a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/funcoes.js"></script>
   <script src="js/depoimentos.js"></script>
 </body>
 </html>

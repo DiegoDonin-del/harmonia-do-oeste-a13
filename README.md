@@ -1,12 +1,21 @@
-# Harmonia do Oeste - Trabalho A1.3
+# Escola de Música Harmonia do Oeste — A1.3
 
-Site da escola de música (trabalho A1.1) agora com PHP e MySQL.
+Trabalho A1.3 de Fundamentos ao Desenvolvimento Web (UNOESC), feito por Diego Vinicius Donin Quadrado.
+Site de aulas de instrumentos musicais (A1.1) integrado a um banco MySQL com PHP.
 
-Seções feitas:
-- Orçamento: o formulário salva na tabela `orcamentos`
-- Contato: o formulário salva na tabela `contatos`
-- Depoimentos: os depoimentos são listados da tabela `depoimentos` e tem um formulário para enviar um novo
+## Seções implementadas
 
-O arquivo do banco está na pasta `banco`.
+| Seção | Tipo | Tabela | PHP | JavaScript |
+|---|---|---|---|---|
+| Orçamento | Inserção | `orcamentos` | `php/salvar_orcamento.php` | `js/orcamento.js` |
+| Contato | Inserção | `contatos` | `php/salvar_contato.php` | `js/contato.js` |
+| Depoimentos | Listagem + inserção | `depoimentos` | `php/listar_depoimentos.php`, `php/salvar_depoimento.php` | `js/depoimentos.js` |
 
-Para rodar: colocar a pasta no `htdocs` do XAMPP, ligar o Apache e o MySQL e importar o banco no phpMyAdmin.
+`php/conexao.php` faz a conexão com o banco, e `js/funcoes.js` tem as funções comuns (envio com `fetch` e mensagens de retorno).
+
+## Como rodar (XAMPP)
+
+1. Copie a pasta do projeto para `C:\xampp\htdocs\`.
+2. No XAMPP Control Panel, inicie o **Apache** e o **MySQL**.
+3. Abra `http://localhost/phpmyadmin`, vá em **Importar** e importe `banco/harmonia_oeste.sql`.
+4. Acesse `http://localhost/<nome-da-pasta>/index.html`.

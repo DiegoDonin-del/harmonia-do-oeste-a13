@@ -105,9 +105,10 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
-          <!-- formulário de orçamento (salva no banco) -->
+          <!-- Formulário de orçamento: o JavaScript (js/orcamento.js) envia
+               estes dados para php/salvar_orcamento.php, que grava no banco -->
           <form id="formOrcamento">
-            <!-- campo escondido com o nome do curso -->
+            <!-- campo escondido para o banco saber de qual curso é o orçamento -->
             <input type="hidden" name="servico" value="Violão e Guitarra">
             <div class="mb-3">
               <label class="form-label">Nome</label>
@@ -144,10 +145,12 @@
               <textarea name="observacoes" class="form-control" rows="3"></textarea>
             </div>
           </form>
+          <div id="alertaOrcamento" class="d-none"></div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="submit" form="formOrcamento" class="btn btn-ambar">Enviar Solicitação</button>
+          <!-- form="formOrcamento" liga este botão ao formulário acima -->
+          <button type="submit" form="formOrcamento" id="btnEnviarOrcamento" class="btn btn-ambar">Enviar Solicitação</button>
         </div>
       </div>
     </div>
@@ -172,6 +175,7 @@
   </a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/funcoes.js"></script>
   <script src="js/orcamento.js"></script>
 </body>
 </html>
